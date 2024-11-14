@@ -26,11 +26,11 @@
 		to_chat(user, span_notice("The postbox refuses your cassette, it seems the Space Board is out for lunch."))
 		return
 
-	if(attacked_tape.name == "A blank cassette")
+	if(attacked_tape.initial(name))
 		to_chat(user, span_notice("Please name your tape before submitting it, you can't change this later!"))
 		return
 
-	if(attacked_tape.cassette_desc_string == "Generic Desc")
+	if(findtext(attacked_tape.cassette_desc_string, "A blank cassette perfect for mixing."))
 		to_chat(user, span_notice("Please add a description to your tape before submitting it, you can't change this later!"))
 		return
 

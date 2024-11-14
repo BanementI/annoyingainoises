@@ -26,7 +26,7 @@
 	var/approved_tape = FALSE
 	///are we random?
 	var/random = FALSE
-	var/cassette_desc_string = "Generic Desc"
+	var/cassette_desc_string = "A blank cassette perfect for mixing."
 
 /obj/item/device/cassette_tape/Initialize(mapload, spawned_id)
 	. = ..()

@@ -50,6 +50,7 @@ GLOBAL_VAR(dj_booth)
 		context[SCREENTIP_CONTEXT_CTRL_LMB] = "Eject Tape"
 		if(!broadcasting)
 			context[SCREENTIP_CONTEXT_LMB] = "Play Tape"
+			context[SCREENTIP_CONTEXT_ALT_LMB] = "Play Track Number"
 	return CONTEXTUAL_SCREENTIP_SET
 
 /obj/machinery/cassette/dj_station/examine(mob/user)
